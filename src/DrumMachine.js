@@ -4,6 +4,7 @@ import DrumBank from './DrumBank';
 import Switch from './Switch';
 import VolumeSlider from './VolumeSlider';
 import Display from './Display';
+import './styling/DrumMachine.css'
 
 class DrumMachine extends React.Component {
   constructor(props) {
