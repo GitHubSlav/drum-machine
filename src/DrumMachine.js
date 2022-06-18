@@ -1,14 +1,21 @@
 import React from 'react';
 import {heaterKit, pianoKit} from './audioTracks'
+import DrumBank from './DrumBank';
 
 class DrumMachine extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
+    this.state = {
+      kit : pianoKit
+    }
   }
 
-  render(){
+  render() {
+    
     return (
-      <div>I am DrumMachine</div>
+      <div id="drum-machine">
+        <DrumBank kit={this.state.kit}/>
+      </div>
     );
   }
   
