@@ -1,6 +1,7 @@
 import React from 'react';
 import {heaterKit, pianoKit} from './audioTracks'
 import DrumBank from './DrumBank';
+import Switch from './Switch';
 
 class DrumMachine extends React.Component {
   constructor(props) {
@@ -15,6 +16,10 @@ class DrumMachine extends React.Component {
     return (
       <div id="drum-machine">
         <DrumBank kit={this.state.kit}/>
+        <div id="control-panel">
+          <Switch text={"Power"}/>
+          <Switch text={"Switch Kit"}/>
+        </div>
       </div>
     );
   }
