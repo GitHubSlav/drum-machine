@@ -1,0 +1,6 @@
+#drum-bank {
+    padding: 4vw 3vw;
+    display: grid;
+    grid-template-columns: 13vw 13vw 13vw;
+    grid-template-rows: 12vw 12vw 12vw;
+}
