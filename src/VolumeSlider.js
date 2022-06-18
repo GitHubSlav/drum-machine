@@ -1,4 +1,5 @@
 import React from 'react';
+import './styling/VolumeSlider.css'
 
 class VolumeSlider extends React.Component {
     render() {
