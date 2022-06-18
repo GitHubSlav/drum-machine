@@ -1,0 +1,11 @@
+#display{
+    width: 30vw;
+    height: 6vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5vw;
+    color: orangered;
+    box-shadow: 0px 0px 10px 2px orangered;
+}

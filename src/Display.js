@@ -1,4 +1,5 @@
 import React from 'react';
+import './styling/Display.css'
 
 class Display extends React.Component {
     render() {
