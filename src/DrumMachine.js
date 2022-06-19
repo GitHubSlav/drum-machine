@@ -62,7 +62,12 @@ class DrumMachine extends React.Component {
   render() { 
     return (
       <div id="drum-machine">
-        <DrumBank kit={this.state.kit}/>
+        <DrumBank 
+          kit={this.state.kit} 
+          volume={this.state.volume} 
+          setDisplayText={this.setDisplayText}
+          isOn={this.state.isPowerOn}
+        />
         <div id="control-panel">
           <Switch
             text={"Power"}
