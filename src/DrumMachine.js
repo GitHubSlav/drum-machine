@@ -33,14 +33,18 @@ class DrumMachine extends React.Component {
   toggleKit() {
     this.setState((state) => 
       {
+        let res = {};
         if (state.kit === heaterKit){
-          this.setDisplayText("Piano Kit");
-          return { kit: pianoKit };
-        } 
-        else {
-          this.setDisplayText("Heater Kit");
-          return { kit: heaterKit };
+          res.kit = pianoKit;
+          res.displayText = "Piano Kit";
         }
+        else {
+          res.kit = heaterKit;
+          res.displayText = "Heater Kit";
+        }
+        if (!state.isPowerOn)
+          res.displayText = "";
+        return res;
       }
     );
   }
@@ -48,9 +52,11 @@ class DrumMachine extends React.Component {
   togglePower() {
     this.setState((state) => 
       {
-        this.setDisplayText("");
-        return { isPowerOn: !state.isPowerOn,}
-      }   
+        return { 
+          isPowerOn: !state.isPowerOn, 
+          displayText: ""
+        }
+      }
     );
   }
 
