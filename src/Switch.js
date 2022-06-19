@@ -6,8 +6,10 @@ class Switch extends React.Component {
       return (
         <div className="switch">
           {this.props.text}
-          <div className="switch-rail">
-            <div className="switch-trigger"></div>
+          <div className="switch-rail" onClick={this.props.onClick}>
+            <div className="switch-trigger" 
+              style={this.props.toggleState ? {float: 'right'} : {float: 'left'}}>  
+            </div>
           </div>
         </div>
       );
