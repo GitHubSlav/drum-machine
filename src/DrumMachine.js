@@ -20,6 +20,7 @@ class DrumMachine extends React.Component {
     this.setDisplayText = this.setDisplayText.bind(this);
     this.toggleKit = this.toggleKit.bind(this);
     this.togglePower = this.togglePower.bind(this);
+    this.setVolume = this.setVolume.bind(this);
   }
 
   setDisplayText(text) {
@@ -53,6 +54,11 @@ class DrumMachine extends React.Component {
     );
   }
 
+  setVolume(val){
+    this.setDisplayText(`Volume ${val}`);
+    this.setState({volume: val});
+  }
+
   render() { 
     return (
       <div id="drum-machine">
@@ -64,7 +70,7 @@ class DrumMachine extends React.Component {
             toggleState={this.state.isPowerOn}
           />
           <Display text={this.state.displayText}/>
-          <VolumeSlider value={this.state.volume}/>
+          <VolumeSlider value={this.state.volume} changeValue={this.setVolume}/>
           <Switch
             text={"Switch Kit"}
             onClick={this.toggleKit}
