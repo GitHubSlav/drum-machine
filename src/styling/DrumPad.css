@@ -4,11 +4,10 @@
     align-items: center;
     width: 11vw;
     height: 10vw;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
+    background-color: black;
+    border-radius: 1vw;
     font-size: 3.5vw;
-    box-shadow: 3px 3px 5px black;
     cursor: pointer;
     color: orangered;
-    box-shadow: 0px 0px 10px 2px orangered;
+    box-shadow: 0vw 0vw 1vw 0.2vw orangered;
 }
