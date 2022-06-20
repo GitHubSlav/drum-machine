@@ -75,18 +75,21 @@ class DrumMachine extends React.Component {
           isOn={this.state.isPowerOn}
         />
         <div id="control-panel">
-          <Switch
-            text={"Power"}
-            onClick={this.togglePower}
-            toggleState={this.state.isPowerOn}
-          />
+          <div id='switches'>
+            <Switch
+              text={"Power"}
+              onClick={this.togglePower}
+              toggleState={this.state.isPowerOn}
+            />
+            <Switch
+              text={"Switch Kit"}
+              onClick={this.toggleKit}
+              toggleState={this.state.kit === heaterKit ? false : true }
+            />
+          </div>
+
           <Display text={this.state.displayText}/>
           <VolumeSlider value={this.state.volume} changeValue={this.setVolume}/>
-          <Switch
-            text={"Switch Kit"}
-            onClick={this.toggleKit}
-            toggleState={this.state.kit === heaterKit ? false : true }
-          />
         </div>
       </div>
     );
