@@ -19,3 +19,20 @@
     cursor: pointer;
     box-shadow: 0vw 0vw 0.4vw 0.05vw orangered;
 }
+
+@media (max-width: 500px){ 
+    .switch-rail{
+        width: 12vw;
+        height: 5vw;
+        background-color: black;
+        padding: 1vw;
+    }
+      
+    .switch-trigger{
+        width: 6vw;
+        height: 5vw;
+        background-color: orangered;
+        cursor: pointer;
+        box-shadow: 0vw 0vw 0.8vw 0.1vw orangered;
+    }
+}
