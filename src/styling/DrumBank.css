@@ -4,3 +4,13 @@
     grid-template-columns: 13vw 13vw 13vw;
     grid-template-rows: 12vw 12vw 12vw;
 }
+
+@media (max-width: 500px){
+    #drum-bank {
+        padding: 0vw;
+        margin-left: 4vw;
+        display: grid;
+        grid-template-columns: 26vw 26vw 26vw;
+        grid-template-rows: 24vw 24vw 24vw;
+    }
+}
