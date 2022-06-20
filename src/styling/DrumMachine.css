@@ -4,6 +4,7 @@
     display: flex;
     background-color: #0f0f0f;
     box-shadow: 0vw 0vw 1vw 0.5vw orangered;
+    user-select: none;
 }
 
 #control-panel{
