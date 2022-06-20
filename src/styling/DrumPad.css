@@ -12,6 +12,11 @@
     box-shadow: 0vw 0vw 1vw 0.2vw orangered;
 }
 
+.drum-pad.pushed {
+    transform: translateY(0.5vw);
+    box-shadow: 0vw 0vw 0vw 0vw black;
+}
+
 @media (max-width: 500px){
     .drum-pad {
         display: flex;
